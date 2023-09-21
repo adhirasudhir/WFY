@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <link rel="stylesheet" type="text/css" href=" {% static 'css/base.css' %} ">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container1">
+        <h1 class="logo">
+         <a href="admin/"><img width="130" height="60" src="{% static 'img/wfy.png' %}"></a>
+        </h1>
+        <ul>
+          <li><a href="{% url 'index' %}" class="current">Home</a></li>
+          <li><a href="https://helpagemain.000webhostapp.com/">Projects</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+          <li><a href="{% url 'Register' %}">SIGNUP</a></li>
+          <li><a href="{% url 'Login' %}">SIGN IN</a></li>
+
+        </ul>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <p class="translate-container">
+        <button class="translate-button" id="translate-button">
+            <img class="google-translate-icon" src="{% static 'img/google_translate_icon.png'  %}" alt="Translate">
+        </button>
+        <div id="google_translate_element"></div>
+    </p>
+          <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
+
+        // Function to show/hide the translation element
+        function toggleTranslateElement() {
+            var translateElement = document.getElementById('google_translate_element');
+            if (translateElement.style.display === 'block') {
+                translateElement.style.display = 'none';
+            } else {
+                translateElement.style.display = 'block';
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script type="text/javascript">
+        // Attach the toggleTranslateElement function to the button's click event
+        var translateButton = document.getElementById('translate-button');
+        translateButton.addEventListener('click', toggleTranslateElement);
+    </script>
+
+
+
+      </div>
+
+
+    </nav>
+      <script src="script.js"></script>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
