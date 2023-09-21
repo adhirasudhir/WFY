@@ -1,18 +1,3 @@
-# Django Login & Sign Up Form
-This is a Django Login & Sign Up Form With Email Verification & Password Reset Functionality
-
-![](https://github.com/steve-njuguna-k/Django-Login-Register-Form/blob/master/src/static/img/Screenshot-1.PNG)
-
-# Some Unique Features
-
-- You Can Recieve An Email Address To Reset Your Password
-
-![](https://github.com/steve-njuguna-k/Django-Login-Register-Form/blob/master/src/static/img/Screenshot-6.PNG)
-
-- You Can Recieve An Email Address To Activate Your Account
-
-![](https://github.com/steve-njuguna-k/Django-Login-Register-Form/blob/master/src/static/img/Screenshot-7.PNG)
-
 
 # Project Setup Instructions
 1) Git clone the repository 
